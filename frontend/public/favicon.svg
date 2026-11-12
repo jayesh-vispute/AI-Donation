@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C4622D" />
+      <stop offset="100%" stop-color="#9A4214" />
+    </linearGradient>
+    <linearGradient id="sparkleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="100%" stop-color="#FFB300" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.25" flood-color="#000000"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="115" fill="url(#brandGrad)" />
+  <path filter="url(#shadow)" d="M256 390 C256 390 140 310 140 220 C140 170 180 140 225 140 C246 140 256 155 256 155 C256 155 266 140 287 140 C332 140 372 170 372 220 C372 310 256 390 256 390 Z" fill="#FFFFFF" />
+  <!-- AI Sparkle 1 -->
+  <path d="M375 125 C375 145 385 155 405 155 C385 155 375 165 375 185 C375 165 365 155 345 155 C365 155 375 145 375 125 Z" fill="url(#sparkleGrad)" />
+  <!-- AI Sparkle 2 -->
+  <path d="M145 340 C145 352 151 358 163 358 C151 358 145 364 145 376 C145 364 139 358 127 358 C139 358 145 352 145 340 Z" fill="url(#sparkleGrad)" />
+</svg>

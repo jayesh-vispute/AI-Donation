@@ -1,0 +1,66 @@
+FINAL YOLOv8 CLASS MAPPING
+==========================
+
+ID 0: rice
+ID 1: beans
+ID 2: flour
+ID 3: pasta
+ID 4: sugar
+ID 5: oil
+ID 6: milk
+ID 7: water
+ID 8: juice
+ID 9: tea
+ID 10: coffee
+ID 11: cereal
+ID 12: chips
+ID 13: chocolate
+ID 14: cake
+ID 15: candy
+ID 16: nuts
+ID 17: spices
+ID 18: fish
+ID 19: shirt
+ID 20: jacket
+ID 21: hoodie
+ID 22: pants
+ID 23: shorts
+ID 24: skirt
+ID 25: shoes
+ID 26: slippers
+ID 27: flats
+ID 28: high heels
+ID 29: book
+ID 30: notebook
+ID 31: pen
+ID 32: pencil
+ID 33: eraser
+ID 34: sharpener
+ID 35: ruler
+ID 36: computer
+ID 37: keyboard
+ID 38: earphones
+ID 39: spoon
+ID 40: fork
+ID 41: band aid
+ID 42: medicine
+ID 43: safety pin
+ID 44: scissors
+ID 45: surgical gloves
+ID 46: thermometer
+ID 47: tweezers
+ID 48: chair
+ID 49: table
+ID 50: sofa
+ID 51: bed
+ID 52: desk
+ID 53: shelf
+ID 54: mirror
+ID 55: lamp
+ID 56: shoe rack
+ID 57: fridge
+ID 58: microwave
+ID 59: oven
+ID 60: watch
+ID 61: marker
+ID 62: sticky note

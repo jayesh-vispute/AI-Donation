@@ -1,0 +1,62 @@
+class_id,class_name,train_images,validation_images,total_labels
+0,rice,275,22,547
+1,beans,231,24,539
+2,flour,155,27,305
+3,pasta,306,24,772
+4,sugar,198,18,515
+5,oil,231,25,668
+6,milk,255,28,687
+7,water,450,38,1336
+8,juice,525,46,1587
+9,tea,444,45,1114
+10,coffee,489,41,1384
+11,cereal,527,30,961
+12,chips,308,24,667
+13,chocolate,495,46,1182
+14,cake,288,32,557
+15,candy,606,70,1132
+16,nuts,270,29,492
+17,spices,330,36,1153
+18,fish,201,14,641
+19,shirt,809,63,1077
+20,jacket,151,21,217
+21,hoodie,492,64,722
+22,pants,489,56,653
+23,shorts,192,11,205
+24,skirt,792,120,1157
+25,shoes,290,36,493
+26,slippers,183,14,299
+27,flats,210,30,272
+28,high heels,283,86,393
+29,book,144,176,585
+30,notebook,127,30,205
+31,pen,317,54,538
+32,pencil,396,79,729
+33,eraser,339,74,556
+34,sharpener,344,74,478
+35,ruler,282,64,385
+36,computer,106,94,366
+37,keyboard,199,11,216
+38,earphones,167,17,263
+39,spoon,200,10,210
+40,fork,507,35,1466
+41,band aid,347,53,400
+42,medicine,136,45,214
+43,safety pin,140,40,250
+44,scissors,193,16,265
+45,surgical gloves,137,63,299
+46,thermometer,200,20,220
+47,tweezers,200,0,200
+48,chair,713,96,1556
+49,table,339,48,456
+50,sofa,1159,217,1614
+51,bed,1137,209,1436
+52,desk,235,26,279
+53,shelf,123,24,189
+54,mirror,353,49,474
+55,lamp,1543,252,2535
+56,shoe rack,200,2,202
+57,fridge,340,1,373
+58,microwave,322,9,333
+59,oven,290,7,297
+60,watch,200,6,206

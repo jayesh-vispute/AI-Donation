@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    fetch('/src/i18n/locales/en.json')
+      .then(r => r.text())
+      .then(text => {
+        try {
+          JSON.parse(text);
+          document.body.innerHTML = '<h1>VALID JSON</h1>';
+        } catch (e) {
+          document.body.innerHTML = '<h1>ERROR: ' + e.message + '</h1>';
+        }
+      });
+  </script>
+</body>
+</html>

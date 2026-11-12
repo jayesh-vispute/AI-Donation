@@ -1,0 +1,50 @@
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.log
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Node.js
+node_modules/
+dist/
+build/
+
+# IDEs / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Jupyter / ML / Caches
+.ipynb_checkpoints/
+.cache/
+.pytest_cache/
+runs/
+wandb/
+
+# User generated content
+uploads/
+!uploads/.gitkeep
+results/
+!results/.gitkeep
+
+# ML Models and Data
+*.pt
+*.pth
+*.onnx
+*.engine
+datasets/
+final_dataset/
+final_dataset_64/
+final_dataset_clean/
+predictions/
+test_images/

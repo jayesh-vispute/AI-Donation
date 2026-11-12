@@ -1,0 +1,13 @@
+.git
+.gitignore
+.dockerignore
+node_modules/
+npm-debug.log
+Dockerfile
+docker-compose.yml
+.env
+.env.example
+.venv/
+venv/
+__pycache__/
+*.pyc

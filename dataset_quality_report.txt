@@ -1,0 +1,235 @@
+================================================================================
+YOLO DATASET QUALITY REPORT
+================================================================================
+Dataset: C:\Users\palla\Desktop\Donation_AI\final_dataset_clean
+Total Classes: 61
+
+--- SPLIT SUMMARY ---
+  train: 16694 images, 16695 label files
+  valid: 2258 images, 2258 label files
+  test: 1100 images, 1100 label files
+
+--- FULL CLASS DISTRIBUTION ---
+ID   CLASS NAME         TRAIN IMG    VAL IMG      TRAIN LBL    VAL LBL      TOTAL LBL   
+----------------------------------------------------------------------------------
+0    rice               275          22           499          48           547         
+1    beans              231          24           483          56           539         
+2    flour              155          27           259          46           305         
+3    pasta              306          24           714          58           772         
+4    sugar              198          18           468          47           515         
+5    oil                231          25           609          59           668         
+6    milk               255          28           612          75           687         
+7    water              450          38           1233         103          1336        
+8    juice              525          46           1452         135          1587        
+9    tea                444          45           1029         85           1114        
+10   coffee             489          41           1269         115          1384        
+11   cereal             527          30           911          50           961         
+12   chips              308          24           616          51           667         
+13   chocolate          495          46           1068         114          1182        
+14   cake               288          32           504          53           557         
+15   candy              606          70           1014         118          1132        
+16   nuts               270          29           435          57           492         
+17   spices             330          36           1035         118          1153        
+18   fish               201          14           585          56           641         
+19   shirt              809          63           994          83           1077        
+20   jacket             151          21           193          24           217         
+21   hoodie             492          64           642          80           722         
+22   pants              489          56           593          60           653         
+23   shorts             192          11           192          13           205         
+24   skirt              792          120          991          166          1157        
+25   shoes              290          36           444          49           493         
+26   slippers           183          14           280          19           299         
+27   flats              210          30           236          36           272         
+28   high heels         283          86           300          93           393         
+29   book               142          175          339          239          578         
+30   notebook           120          29           157          37           194         
+31   pen                304          50           424          80           504         
+32   pencil             377          76           547          152          699         
+33   eraser             325          71           451          80           531         
+34   sharpener          337          73           384          79           463         
+35   ruler              262          60           296          61           357         
+36   computer           106          94           209          157          366         
+37   keyboard           199          11           204          12           216         
+38   earphones          72           17           105          19           124         
+39   spoon              132          10           132          10           142         
+40   fork               507          35           1374         92           1466        
+41   band aid           347          53           347          53           400         
+42   medicine           136          45           165          49           214         
+43   safety pin         140          40           192          58           250         
+44   scissors           193          16           242          23           265         
+45   surgical gloves    137          63           210          89           299         
+46   thermometer        200          20           200          20           220         
+47   tweezers           200          0            200          0            200         
+48   chair              713          96           1388         168          1556        
+49   table              339          48           394          62           456         
+50   sofa               1159         217          1360         254          1614        
+51   bed                1137         209          1207         228          1435        
+52   desk               235          26           253          26           279         
+53   shelf              123          24           159          30           189         
+54   mirror             353          49           413          61           474         
+55   lamp               1543         252          2187         348          2535        
+56   shoe rack          200          2            200          2            202         
+57   fridge             340          1            372          1            373         
+58   microwave          322          9            324          9            333         
+59   oven               290          7            290          7            297         
+60   watch              147          6            147          6            153         
+
+--- DATASET STATISTICS ---
+  Minimum class count: 124 (earphones)
+  Maximum class count: 2535 (lamp)
+  Average class count: 641.2
+  Class imbalance ratio: 20.4x
+
+--- STATIONERY CLASSES (FOCUS) ---
+ID   CLASS NAME         TRAIN LBL    VAL LBL      TOTAL        STATUS         
+-------------------------------------------------------------------------
+29   book               339          239          578          OK
+30   notebook           157          37           194          MODERATE
+31   pen                424          80           504          OK
+32   pencil             547          152          699          OK
+33   eraser             451          80           531          OK
+34   sharpener          384          79           463          OK
+35   ruler              296          61           357          OK
+44   scissors           242          23           265          MODERATE
+
+--- INVALID LABELS ---
+  [train] Furniture Focused In_36541749_7_jpg.rf.33554f6e0e435af7eaba205f35e94e86_4db1aceb8f.txt:2 - near-zero width=0.000781
+  [train] stationery_src_21i2279_Ballpoint-11-_jpg.rf.bb09faa717acf89797d1e25bef733f6b.txt:2 - bbox outside image [0.034,0.331,0.362,1.223]
+  [train] stationery_src_21i2279_Ballpoint-8-_jpg.rf.19181cfb7aaad24c5546a9d3543f8a0f.txt:2 - bbox outside image [-0.389,0.474,0.611,1.472]
+  [train] stationery_src_21i2279_Ballpoint-9-_jpg.rf.37169acf5fc18fbac4257f8ba3189e2d.txt:1 - bbox outside image [-0.243,0.784,0.426,1.161]
+  [train] stationery_src_21i2300_10_jpg.rf.e721cd3e7855832d80a94268cea8fc83.txt:1 - bbox outside image [0.184,0.324,0.588,1.295]
+  [train] stationery_src_21i2300_10_jpg.rf.e721cd3e7855832d80a94268cea8fc83.txt:2 - bbox outside image [0.207,-0.040,0.460,0.303]
+  [train] stationery_src_21i2300_10_jpg.rf.e721cd3e7855832d80a94268cea8fc83.txt:3 - bbox outside image [0.523,-0.405,0.764,0.405]
+  [train] stationery_src_21i2300_12_jpg.rf.cb2e96667118cb2e314a0a532e74b51f.txt:1 - bbox outside image [-0.157,0.541,0.489,0.923]
+  [train] stationery_src_21i2300_12_jpg.rf.cb2e96667118cb2e314a0a532e74b51f.txt:2 - height=0.0; near-zero height=0.0
+  [train] stationery_src_21i2300_12_jpg.rf.cb2e96667118cb2e314a0a532e74b51f.txt:3 - bbox outside image [0.100,0.519,0.556,1.478]
+  [train] stationery_src_21i2300_12_jpg.rf.cb2e96667118cb2e314a0a532e74b51f.txt:4 - bbox outside image [0.190,0.430,0.811,1.300]
+  [train] stationery_src_21i2300_15_jpg.rf.221435e4067a0ac269afb7b2c525a1b3.txt:4 - bbox outside image [0.555,-0.379,0.821,0.398]
+  [train] stationery_src_21i2300_16_jpg.rf.8cde692c56bdc2479fec5379bb4b4f43.txt:3 - bbox outside image [0.059,0.294,0.388,1.292]
+  [train] stationery_src_21i2300_19_jpg.rf.60003e4e7b5b89a59232eac1e562c5a7.txt:1 - bbox outside image [0.394,0.425,1.375,1.170]
+  [train] stationery_src_21i2300_19_jpg.rf.60003e4e7b5b89a59232eac1e562c5a7.txt:2 - bbox outside image [-0.254,-0.204,0.634,0.513]
+  [train] stationery_src_21i2300_1_jpg.rf.c933aa2054aa9eb3beb560a42875e405.txt:2 - bbox outside image [0.373,0.383,1.166,0.942]
+  [train] stationery_src_21i2300_1_jpg.rf.c933aa2054aa9eb3beb560a42875e405.txt:3 - bbox outside image [0.082,0.449,0.440,1.353]
+  [train] stationery_src_21i2300_22_jpg.rf.7bb1bfbfc9c3a86aedee07df858fe417.txt:1 - bbox outside image [-0.091,-0.252,0.091,0.584]
+  [train] stationery_src_21i2300_22_jpg.rf.7bb1bfbfc9c3a86aedee07df858fe417.txt:2 - bbox outside image [0.480,0.647,1.117,0.750]
+  [train] stationery_src_21i2300_22_jpg.rf.7bb1bfbfc9c3a86aedee07df858fe417.txt:3 - bbox outside image [0.421,0.242,1.364,0.405]
+  [train] stationery_src_21i2300_22_jpg.rf.7bb1bfbfc9c3a86aedee07df858fe417.txt:4 - bbox outside image [0.452,0.388,1.445,0.759]
+  [train] stationery_src_21i2300_23_jpg.rf.3b81415387d893f5a27867c50b4d0f6a.txt:1 - bbox outside image [0.408,0.583,1.212,0.719]
+  [train] stationery_src_21i2300_23_jpg.rf.3b81415387d893f5a27867c50b4d0f6a.txt:2 - bbox outside image [0.152,-0.125,0.467,0.546]
+  [train] stationery_src_21i2300_23_jpg.rf.3b81415387d893f5a27867c50b4d0f6a.txt:4 - bbox outside image [0.502,0.285,1.439,0.656]
+  [train] stationery_src_21i2300_24_jpg.rf.8228476820e8d631363fbaf0f1a76598.txt:2 - bbox outside image [-0.406,0.465,0.537,0.826]
+  [train] stationery_src_21i2300_26_jpg.rf.760e99e9033acbf6a22441a2edf7b168.txt:1 - bbox outside image [0.444,0.113,1.093,0.862]
+  [train] stationery_src_21i2300_26_jpg.rf.760e99e9033acbf6a22441a2edf7b168.txt:3 - bbox outside image [0.268,-0.070,0.444,0.134]
+  [train] stationery_src_21i2300_28_jpg.rf.ad6c9b986792b911daf3e8550aeef32e.txt:1 - bbox outside image [0.152,0.191,0.535,1.139]
+  [train] stationery_src_21i2300_28_jpg.rf.ad6c9b986792b911daf3e8550aeef32e.txt:2 - bbox outside image [0.287,-0.026,0.640,0.212]
+  [train] stationery_src_21i2300_2_jpg.rf.696047430a6ee495f3d763ed5a6a9bd0.txt:3 - bbox outside image [-0.201,0.239,0.578,0.980]
+  [train] stationery_src_21i2300_2_jpg.rf.696047430a6ee495f3d763ed5a6a9bd0.txt:4 - bbox outside image [0.458,0.351,0.931,1.080]
+  [train] stationery_src_21i2300_30_jpg.rf.6eed3d488389dbe83f59b743811cd5c6.txt:2 - bbox outside image [0.516,0.322,1.448,0.655]
+  [train] stationery_src_21i2300_32_jpg.rf.9791f406dcf11abbbf8b3aaa465cf6d8.txt:1 - bbox outside image [0.233,0.418,1.170,1.071]
+  [train] stationery_src_21i2300_33_jpg.rf.e6496d889c7065142cb753636e1c6473.txt:2 - bbox outside image [0.277,0.430,0.592,1.050]
+  [train] stationery_src_21i2300_35_jpg.rf.907edf46a11b2936b4692ae791cd4b78.txt:1 - bbox outside image [0.727,0.556,1.073,0.665]
+  [train] stationery_src_21i2300_35_jpg.rf.907edf46a11b2936b4692ae791cd4b78.txt:2 - bbox outside image [0.123,0.246,0.699,1.089]
+  [train] stationery_src_21i2300_36_jpg.rf.f2c8368d30293daf5fa281f71e88d670.txt:1 - bbox outside image [-0.018,0.725,0.981,1.130]
+  [train] stationery_src_21i2300_37_jpg.rf.2271bbd65a7fdf70f0bee96207c3cbb2.txt:1 - bbox outside image [0.030,0.437,0.467,1.287]
+  [train] stationery_src_21i2300_37_jpg.rf.2271bbd65a7fdf70f0bee96207c3cbb2.txt:2 - bbox outside image [0.146,0.402,0.762,1.200]
+  [train] stationery_src_21i2300_37_jpg.rf.2271bbd65a7fdf70f0bee96207c3cbb2.txt:4 - bbox outside image [0.494,0.310,1.492,0.464]
+  [train] stationery_src_21i2300_39_jpg.rf.7089b7bc92d744024b5d0d797ce5801b.txt:1 - bbox outside image [-0.301,0.549,0.687,0.750]
+  [train] stationery_src_21i2300_40_jpg.rf.69546a8069692b340bbc7a57ecdc20cc.txt:1 - bbox outside image [0.087,0.186,1.060,0.511]
+  [train] stationery_src_21i2300_4_jpg.rf.acaa3c3dde6f01c508996891d15a103c.txt:1 - bbox outside image [0.193,0.520,0.924,1.471]
+  [train] stationery_src_21i2300_5_jpg.rf.22f6d747e665aa24e5c65f530fc01c82.txt:2 - bbox outside image [0.345,0.626,1.122,1.243]
+  [train] stationery_src_21i2300_6_jpg.rf.c45448cf6a91f466c92a3e4466ff5606.txt:1 - bbox outside image [0.496,0.330,1.289,0.706]
+  [train] stationery_src_21i2300_7_jpg.rf.a91170229ebb997c0605e7fc53bcd03f.txt:2 - bbox outside image [0.404,0.468,1.126,1.084]
+  [train] stationery_src_21i2300_8_jpg.rf.0c2e444b42891acf68287f0bb0954e5d.txt:1 - bbox outside image [0.584,-0.413,0.863,0.413]
+  [train] stationery_src_22i-2812_jpg.rf.7198e310db25a9ebc1742379795303ee.txt:2 - bbox outside image [-0.030,0.379,0.119,0.855]
+  [train] stationery_src_22i-2816_jpg.rf.c86a52a568974007abe577413ab25cfa.txt:1 - bbox outside image [0.111,0.362,0.364,1.085]
+  [train] stationery_src_22i-2816_jpg.rf.c86a52a568974007abe577413ab25cfa.txt:2 - bbox outside image [0.205,0.377,0.768,1.061]
+  ... and 117 more
+  Total invalid: 167
+
+--- SUSPICIOUS NOTEBOOK ANNOTATIONS ---
+  [train] Stationary Items Dat_21i2279_Notebook-17-_jpg.rf.f68b691c26695d8fa75edf199b76cc44_77e34704f9.txt:1 - Unusual notebook aspect ratio (5.2:1)
+  [train] Stationary Items Dat_21i2279_Notebook-17-_jpg.rf.f68b691c26695d8fa75edf199b76cc44_77e34704f9.txt:2 - Unusual notebook aspect ratio (5.7:1)
+  [train] Stationary Items Dat_22i-2829_jpg.rf.d7b52ed034a68fad93e8d0d2deca464c_90b6f42a53.txt:1 - Unusual notebook aspect ratio (3.5:1)
+  [train] Stationary Items Dat_22i-9815_notebook_15_jpg.rf.5610d2eef77ac1ae9a27722e8e05251f_9ec2cfd2de.txt:1 - Unusual notebook aspect ratio (3.2:1)
+  [train] Stationary Items Dat_22i2826_12_jpg.rf.56e55597cf4cc2f811e4b6b5be05c0ea_bfdf7d2619.txt:3 - Unusual notebook aspect ratio (3.1:1)
+  [train] Stationary Items Dat_22i2994_25_jpg.rf.ef8b785398a73a231170162f1ea9a64f_921c95ccd0.txt:1 - Unusual notebook aspect ratio (3.9:1)
+  [train] stationery_src_21i2279_Notebook-17-_jpg.rf.f68b691c26695d8fa75edf199b76cc44.txt:1 - Unusual notebook aspect ratio (5.2:1)
+  [train] stationery_src_21i2279_Notebook-17-_jpg.rf.f68b691c26695d8fa75edf199b76cc44.txt:2 - Unusual notebook aspect ratio (5.7:1)
+  [train] stationery_src_22i-2829_jpg.rf.d7b52ed034a68fad93e8d0d2deca464c.txt:1 - Unusual notebook aspect ratio (3.5:1)
+  [train] stationery_src_22i-9815_notebook_15_jpg.rf.5610d2eef77ac1ae9a27722e8e05251f.txt:1 - Unusual notebook aspect ratio (3.2:1)
+  [train] stationery_src_22i2826_12_jpg.rf.56e55597cf4cc2f811e4b6b5be05c0ea.txt:3 - Unusual notebook aspect ratio (3.1:1)
+  [train] stationery_src_22i2994_25_jpg.rf.ef8b785398a73a231170162f1ea9a64f.txt:1 - Unusual notebook aspect ratio (3.9:1)
+  [train] stationery_src_22i2994_37_jpg.rf.ae42464ac6684ff02e08d8167ecf8fd3.txt:3 - Unusual notebook aspect ratio (77.0:1)
+  [train] stationery_src_notebook1_jpeg.rf.135cc9d2ef972e2f56e6b81a83bab9bb.txt:1 - Unusual notebook aspect ratio (3.4:1)
+  [train] stationery_src_WhatsApp-Image-2023-05-07-at-07-56-46-1-_jpeg.rf.f0ee57da943fe625b6d796938135a70d.txt:3 - Unusual notebook aspect ratio (3.1:1)
+  [train] stationery_src_WhatsApp-Image-2023-05-07-at-07-56-46-1-_jpeg.rf.f0ee57da943fe625b6d796938135a70d.txt:4 - Unusual notebook aspect ratio (44.6:1)
+  [train] stationery_src_WhatsApp-Image-2023-05-07-at-07-56-48-1-_jpeg.rf.0d23e605306e922d8cdb67ac051f077e.txt:1 - Unusual notebook aspect ratio (3.3:1)
+  [valid] stationery_src_I222840_37_jpg.rf.7a6ffcfdc44e21734f3ace71c98bc47c.txt:2 - Unusual notebook aspect ratio (9.3:1)
+  [valid] stationery_src_WhatsApp-Image-2023-05-07-at-07-56-42_jpeg.rf.c8ea984d450a976788aa9a71a6860a92.txt:2 - Unusual notebook aspect ratio (9.9:1)
+  Total suspicious: 19
+
+--- MISSING IMAGE/LABEL PAIRS ---
+  All labels have matching images
+  Total missing images: 0
+
+--- ORPHAN IMAGES (no labels) ---
+  All images have matching labels
+  Total orphan images: 0
+
+--- EMPTY LABEL FILES ---
+  [train] Stationary Items Dat_21i2279_Notebook-1-_jpg.rf.5c8f69bd19cb9766c5414081f4220eb0_39be3808fa.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-10-_jpg.rf.8d0b448a831ce6b31a2e9cf944ee3ce7_b7da1bbea7.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-14-_jpg.rf.9ae96bf6672eaefe576cc0d5d3911853_3bdd0f029b.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-15-_jpg.rf.037686d0e3a0807eee64b837ff7ed3f2_c46628676b.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-16-_jpg.rf.12009bc2e895502098b4bc96ebd0bf62_796c08e88a.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-18-_jpg.rf.f923319ba8557edffb2c00349ad5ab38_5b14839525.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-2-_jpg.rf.2e0a66a1a09c4bd0b3ad93ed7844ba53_2c928c804b.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-20-_jpg.rf.ad9d20175d117f93ce16c49748f8d6d9_1b69960215.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-21-_jpg.rf.805bf94272660c0d8b9c0890fe6a789a_2071cef4d7.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-25-_jpg.rf.4d86e2f13d567f8be4d1842b1f8bc021_3d717a8bfe.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-26-_jpg.rf.7eb034a1a8a5f8add7715e5cb74eed18_393d5c3e30.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-27-_jpg.rf.3f8073f6006fc028d7ff1c0aaab54bfa_612e77c870.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-28-_jpg.rf.ec848a41c752ed7226e0890e06f6ebcb_b962e05d2e.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-29-_jpg.rf.7ce5932450c817bfe7c664be94134e9f_87e0618109.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-3-_jpg.rf.67cf03fcf779a6249ea58ecdad931095_64fbb4f1ea.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-30-_jpg.rf.314be5c9860cc373209c6feb06e36590_1acd55daf7.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-31-_jpg.rf.c0275e42e608544e68419efd6b324909_5ac2d7d25a.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-33-_jpg.rf.9079261d813b9619f3b1a2a4704f6822_56cc078cab.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-34-_jpg.rf.2b95e1af9786b61aadcdb770a87bbd04_5df30ac909.txt - Empty label file
+  [train] Stationary Items Dat_21i2279_Notebook-35-_jpg.rf.44389a0e14655fb30d750b6a3cafb3bc_486dd48d0a.txt - Empty label file
+  Total empty: 65
+
+--- MISSING STATIONERY CLASSES ---
+  [X] marker - NOT in dataset
+  [X] sticky note - NOT in dataset
+  [X] writing pad - NOT in dataset
+  [X] highlighter - NOT in dataset
+  [X] tape - NOT in dataset
+  [X] glue - NOT in dataset
+
+--- AVAILABLE STATIONERY SOURCE DATASET ---
+Source: C:\Users\palla\Desktop\Donation_AI\datasets\Stationary Items Dataset.v8i.yolov8
+License: CC BY 4.0
+Classes: ['ball point', 'book', 'eraser', 'notebook', 'pencil', 'pointer', 'scale', 'sharpener']
+  0: ball point      train=181   valid=32    test=18    total=231
+  1: book            train=75    valid=21    test=10    total=106
+  2: eraser          train=187   valid=41    test=27    total=255
+  3: notebook        train=165   valid=29    test=18    total=212
+  4: pencil          train=212   valid=42    test=34    total=288
+  5: pointer         train=87    valid=16    test=12    total=115
+  6: scale           train=154   valid=35    test=17    total=206
+  7: sharpener       train=184   valid=39    test=29    total=252
+
+--- STATIONERY SOURCE → FINAL DATASET CLASS MAPPING ---
+  ball point      → pen (ID 31)
+  book            → book (ID 29)
+  eraser          → eraser (ID 33)
+  notebook        → notebook (ID 30)
+  pencil          → pencil (ID 32)
+  pointer         → NO MATCH (new class or ignore)
+  scale           → ruler (ID 35)
+  sharpener       → sharpener (ID 34)
+
+================================================================================
+END OF REPORT
+================================================================================

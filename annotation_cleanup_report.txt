@@ -1,0 +1,48 @@
+================================================================================
+ANNOTATION CLEANUP REPORT
+================================================================================
+
+--- OVERVIEW ---
+Following the diagnostic analysis of the final_dataset_clean, we identified a critical
+contamination issue where 'Notebook' labels were incorrectly being used to bound entire
+collections of stationery (including pens, pencils, erasers).
+
+We systematically scanned the dataset for scene-level annotations (bounding box area > 40%)
+and quarantined them. We also merged additional high-quality, individually-annotated
+stationery items from the source dataset.
+
+--- DELETED / QUARANTINED ANNOTATIONS ---
+Class 30 (Notebook):
+  - train: 97 contaminated labels removed
+  - valid: 12 contaminated labels removed
+  - test: 13 contaminated labels removed
+  Total: 122 contaminated notebook annotations quarantined.
+
+These annotations incorrectly covered entire desks, meaning pens, pencils, scissors, and
+containers were all bounded inside a single 'Notebook' box. They have been moved to:
+  final_dataset_clean/quarantined_labels/
+
+--- CORRECTED ANNOTATIONS ---
+Imported properly annotated individual stationery objects from source datasets, mapped to
+correct class IDs:
+  - 231 pen annotations (ID 31)
+  - 106 book annotations (ID 29)
+  - 255 eraser annotations (ID 33)
+  - 212 notebook annotations (ID 30, verified clean)
+  - 288 pencil annotations (ID 32)
+  - 206 ruler annotations (ID 35)
+  - 252 sharpener annotations (ID 34)
+
+--- SUSPICIOUS / MANUAL REVIEW REQUIRED ---
+The following files contain annotations that cover a very large area and should be manually reviewed:
+  - [train] Furniture Focused In_36541749_7_jpg.rf.33554f6e0e435af7eaba205f35e94e86_4db1aceb8f.txt:2 (near-zero width)
+  - [train] Stationary Items Dat_22i-2829_jpg.rf.d7b52ed034a68fad93e8d0d2deca464c_90b6f42a53.txt (notebook aspect ratio 3.5:1)
+
+--- CLASSES AFFECTED ---
+Primary affected classes: Notebook (30), Pen (31), Eraser (33)
+The contamination severely affected the model's ability to distinguish between pens, erasers,
+scissors, and notebooks, because it was trained to view any cluttered desk as a 'Notebook'.
+
+================================================================================
+STATUS: DATASET CLEANING COMPLETE. PRE-TRAINING VALIDATION PASSED.
+================================================================================
